@@ -1,0 +1,31 @@
+{
+  "build": {
+    "dev": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "dev",
+      "cache": {
+        "disabled": true
+      },
+      "env": {
+        "IS_DEV_CLIENT": "true"
+      }
+    },
+    "demo": {
+      "extends": "dev",
+      "developmentClient": false,
+      "ios": {
+        "simulator": false
+      },
+      "env": {
+        "IS_DEV_CLIENT": "false"
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "expo-font-repro",
+    "owner": "jludwig",
     "slug": "expo-font-repro",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,16 +16,33 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jludwig.expofontrepro"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jludwig.expofontrepro"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "assets/Roboto.ttf"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9f8f3b49-682f-4c50-9749-f82618dab7de"
+      }
     }
   }
 }
